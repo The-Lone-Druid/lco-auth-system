@@ -1,5 +1,8 @@
 const app = require("./app");
+const AppConstants = require("./config/config");
 
-app.listen(8080, () => {
-  console.log(`Server is running at port http://localhost:4000`);
+app.listen(AppConstants.PORT, () => {
+  console.log(
+    `Server is running at port http://localhost:${AppConstants.PORT}`
+  );
 });
